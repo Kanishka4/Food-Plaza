@@ -1,0 +1,97 @@
+.App {
+  text-align: center !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Mate SC', serif;
+  margin: 10px 10px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#logo{
+  height:10vh;
+}
+
+.ingredient{
+  width: 100px;
+}
+
+h1{
+  padding: 10vh 10vh;
+}
+
+.header{
+  background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80");
+  font-family: 'Mate SC', serif;
+  display: block !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  font-weight: bolder;
+}
+
+input[type=text], select{
+  height: 30px;
+}
+
+select:hover, select:focus-within{
+  background-color: white;
+  color: black;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.upperCal, .lowerCal{
+  width: 50px;
+}
+
+.searchButton{
+  background-color: #5F9EA0;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.searchButton:hover{
+  background-color: #89CFF0;
+}
+.searchButton:active{
+  transform: translateY(4px);
+}
+
+.app_recipes{
+  display: grid;
+  margin-top: 20px 10px 20px;
+  grid-template-columns: auto auto;
+}
+
+.apphealth{
+  background-color: #008E97;
+  color: white;
+}
+@media screen and (min-width:300px){
+  .app_form{    
+    flex-direction: row; 
+    flex-wrap: wrap;
+  } 
+}
+
+@media screen and (min-width:700px){
+  .app_recipes{
+    
+    grid-template-columns: auto auto auto;
+  }
+}
